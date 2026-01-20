@@ -1,5 +1,4 @@
-![Sovereign Status](https://github.com/Aburakan2015/Elixir-Vision-2026-Kernel/actions/workflows/superior_check.yml/badge.svg)
-
+![Sovereign Status](https://github.com/Aburakan2015/Elixir-Vision-2026-Kernel/actions/workflows/sovereign_check.yml/badge.svg)
 
 
 # [The Master Manifesto | البيان الرئيسي للسيادة الرقمية]
