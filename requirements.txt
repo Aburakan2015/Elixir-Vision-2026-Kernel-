@@ -1,0 +1,7 @@
+# Elixir Kernel Dependencies - Vision 2026
+# Managed by Abdul Jalil Al-Haj
+# These are standard libraries used for physical immortality logic (Law 3)
+# and sovereign vector calculations (Law 16).
+
+# No external packages are required for the core kernel yet, 
+# as it relies on high-efficiency built-in Python modules.
