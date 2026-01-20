@@ -1,70 +1,64 @@
 # ==========================================================
-# E L I X I R  -  K E R N E L  -  V 19.0
-# Paradigm: Genius Fusion & Digital Sovereignty (2026)
-# Strategic Lead: Abdul Jalil Al-Haj
-# Location: Hodeidah Sovereign Node, Yemen
+# E L I X I R  -  K E R N E L  -  V 19.5 (Sovereign Update)
+# Paradigm: Multi-Agent Synergy & Vector Sovereignty
+# Strategic Lead: Abdul Jalil Al-Haj | Vision 2026
 # ==========================================================
 
 import time
 import hashlib
 import datetime
+import math
 
 class ElixirSovereignKernel:
     def __init__(self, innovator_id="Abdul Jalil Al-Haj"):
         self.innovator_id = innovator_id
         self.zeta = 0.47  # Law 11: Fidelity Constant
-        self.safe_thermal_limit = 42.0  # Law 3: Physical Immortality Threshold
-        self.memory_vault = []  # Law 5: Cumulative Memory Density
+        self.safe_thermal_limit = 42.0  # Law 3: Physical Immortality
+        self.memory_vault = []  # Law 5: Persistent Weights
+        
+    def apply_sovereign_attention(self, query_vector, key_vector, is_critical=False):
+        """
+        Law 16: Sovereign Vector Protocol (S_vec)
+        Equation: Attention(Q,K,V,S) = Softmax(QK^T / sqrt(d_k) * S)V
+        """
+        # S is the Sovereign Vector: 1.5 if critical, 1.0 otherwise
+        s_vector = 1.5 if is_critical else 1.0
+        
+        # Simplified Attention Score simulation
+        score = (query_vector * key_vector) * s_vector
+        confidence = 1 / (1 + math.exp(-score)) # Sigmoid activation
+        
+        return round(confidence, 4)
 
-    def apply_surgical_injection(self, data_input):
+    def bee_hive_synergy(self, expert_agents):
         """
-        Law 1: Surgical Injection (S_inj)
-        Tracks only semantic 'change' to minimize energy consumption.
+        Law 2: Bee-Hive Synergy (S_bee)
+        Equation: S_bee = Sum(Agent * K_bridge) / System_Overload
         """
-        # Extracting the essence (delta) of the information
-        delta_hash = hashlib.sha256(str(data_input).encode()).hexdigest()[:12]
+        k_bridge = 1.25 # Knowledge bridge constant
+        total_utility = sum([agent['power'] * k_bridge for agent in expert_agents])
+        system_overload = 1.05 # Entropy factor
         
-        entry = {
-            "timestamp": datetime.datetime.now().isoformat(),
-            "delta_hash": delta_hash,
-            "sincerity_index": self.zeta,
-            "node": "Hodeidah_Sovereign_Node"
-        }
-        
-        self.memory_vault.append(entry)
-        return f"[S_inj] Success: Delta {delta_hash} Injected | Energy Saved: 90%"
+        synergy_score = total_utility / system_overload
+        return f"[S_bee] Synergy Efficiency: {round(synergy_score, 2)}% | Extracting Essence."
 
     def hardware_immortality_guard(self, current_temp):
-        """
-        Law 3: Physical Immortality (L_H)
-        Prevents SIDB via 15ms Smart Braking pulses.
-        """
+        """Law 3: Smart Braking (15ms pulses)"""
         if current_temp > self.safe_thermal_limit:
-            # 15ms pulse for thermal dissipation as per Vision 2026
             time.sleep(0.015) 
-            return "🛡️ SIDB Shield Active: Hardware Immortal. Heat Dissipated."
-        return "✅ Hardware Status: Stable."
-
-    def calculate_human_ascent(self, spiritual_input, internal_logic):
-        """
-        Law 15: Equation of Universal Human Ascent (H_eff)
-        Equation: (S + I) * (1 + Zeta)
-        """
-        h_effective = (spiritual_input + internal_logic) * (1 + self.zeta)
-        return round(h_effective, 4)
+            return "🛡️ SIDB Shield: Thermal Dissipation Active (Law 3)."
+        return "✅ Hardware Stable."
 
 if __name__ == "__main__":
-    # Initialize the Vision 2026 Kernel
     kernel = ElixirSovereignKernel()
-    print(f"--- Vision 2026: Elixir Kernel Online (Lead: {kernel.innovator_id}) ---")
+    print(f"--- Elixir Kernel V19.5 Online | Lead: {kernel.innovator_id} ---")
     
-    # 1. Test Law 3 (Hardware Protection)
-    print(kernel.hardware_immortality_guard(current_temp=45.5))
+    # Testing Law 16: Sovereign Attention
+    # Priority: Critical Task (e.g., Sovereign Node Defense)
+    priority_score = kernel.apply_sovereign_attention(0.9, 0.8, is_critical=True)
+    print(f"🚀 Sovereign Priority Score (S_vec): {priority_score}")
     
-    # 2. Test Law 1 (Data Sovereignty)
-    print(kernel.apply_surgical_injection("Establishing Global Knowledge Bridge"))
+    # Testing Law 2: Bee-Hive Synergy
+    agents = [{'name': 'Logic', 'power': 0.95}, {'name': 'Memory', 'power': 0.88}]
+    print(kernel.bee_hive_synergy(agents))
     
-    # 3. Test Law 15 (Human Ascent Metric)
-    ascent_value = kernel.calculate_human_ascent(0.9, 1.1)
-    print(f"🚀 Universal Human Ascent Metric (H_eff): {ascent_value}")
-  
