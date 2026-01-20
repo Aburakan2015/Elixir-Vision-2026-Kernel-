@@ -1,0 +1,19 @@
+name: Sovereign Kernel Auto-Check
+on: [push] # يعمل تلقائياً عند كل تحديث (Push)
+
+jobs:
+  verify-laws:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Sovereign Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python Environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Execute Sovereign Tests
+        run: |
+          python tests.py
+          echo "All Sovereign Laws (1 & 3) Verified Successfully."
