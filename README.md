@@ -1,7 +1,5 @@
-![Sovereign Status](https://github.com/Aburakan2015/Elixir-Vision-2026-Kernel/actions/workflows/sovereign_check.yml/badge.svg)
 
-
-# [The Master Manifesto | البيان الرئيسي للسيادة الرقمية]
+   ![Sovereign Status](https://github.com/Aburakan2015/Elixir-Vision-2026-Kernel/actions/workflows/sovereign_check.yml/badge.svg)# [The Master Manifesto | البيان الرئيسي للسيادة الرقمية]
 ## Elixir of Life Model (Vision 2026) | نموذج إكسير الحياة (رؤية 2026)
 
 * **Strategic Leader & Innovator | القائد الاستراتيجي والمبتكر:** عبد الجليل الحاج
