@@ -1,5 +1,4 @@
-<meta name="google-site-verification" content="S6XcH41O4wsJ_N0iVyFsl_gF8d9CckIAb1Ax-7cw8qA" />
-https://github.com/Aburakan2015/Elixir-Vision-2026-Kernel-
+<meta name="google-site-verification" content="S6XcH41O4wsJ_N0iVyFsl_gF8d9CckIAb1Ax-7cw8qA" />https://github.com/Aburakan2015/Elixir-Vision-2026-Kernel-
 
 ![Sovereign Status](https://github.com/Aburakan2015/Elixir-Vision-2026-Kernel/actions/workflows/sovereign_check.yml/badge.svg)
 # [The Master Manifesto | البيان الرئيسي للسيادة الرقمية]
