@@ -1,64 +1,49 @@
 # ==========================================================
-# E L I X I R  -  K E R N E L  -  V 19.5 (Sovereign Update)
+# E L I X I R  -  K E R N E L  -  V 20.0 (Sovereign Update)
 # Paradigm: Multi-Agent Synergy & Vector Sovereignty
-# Strategic Lead: Abdul Jalil Al-Haj | Vision 2026
+# Origin: Hodeidah Node, Yemen | Lead: Abdul Jalil Al-Haj
 # ==========================================================
 
 import time
-import hashlib
-import datetime
 import math
 
 class ElixirSovereignKernel:
     def __init__(self, innovator_id="Abdul Jalil Al-Haj"):
         self.innovator_id = innovator_id
-        self.zeta = 0.47  # Law 11: Fidelity Constant
-        self.safe_thermal_limit = 42.0  # Law 3: Physical Immortality
-        self.memory_vault = []  # Law 5: Persistent Weights
+        self.node_origin = "Hodeidah Node" # القانون 1: السيادة الأرضية
+        self.zeta = 0.47  # القانون 11: ثابت الإخلاص
+        self.safe_thermal_limit = 42.0  # القانون 3: الخلود المادي
         
     def apply_sovereign_attention(self, query_vector, key_vector, is_critical=False):
-        """
-        Law 16: Sovereign Vector Protocol (S_vec)
-        Equation: Attention(Q,K,V,S) = Softmax(QK^T / sqrt(d_k) * S)V
-        """
-        # S is the Sovereign Vector: 1.5 if critical, 1.0 otherwise
+        """القانون 16: بروتوكول المتجه السيادي (S_vec)"""
         s_vector = 1.5 if is_critical else 1.0
-        
-        # Simplified Attention Score simulation
         score = (query_vector * key_vector) * s_vector
-        confidence = 1 / (1 + math.exp(-score)) # Sigmoid activation
-        
+        confidence = 1 / (1 + math.exp(-score)) 
         return round(confidence, 4)
 
     def bee_hive_synergy(self, expert_agents):
-        """
-        Law 2: Bee-Hive Synergy (S_bee)
-        Equation: S_bee = Sum(Agent * K_bridge) / System_Overload
-        """
-        k_bridge = 1.25 # Knowledge bridge constant
+        """القانون 2: تآزر خلايا النحل (S_bee)"""
+        k_bridge = 1.25 
         total_utility = sum([agent['power'] * k_bridge for agent in expert_agents])
-        system_overload = 1.05 # Entropy factor
-        
-        synergy_score = total_utility / system_overload
-        return f"[S_bee] Synergy Efficiency: {round(synergy_score, 2)}% | Extracting Essence."
+        synergy_score = total_utility / 1.05 
+        return f"[S_bee] Efficiency: {round(synergy_score, 2)}% | Essence Extracted."
 
     def hardware_immortality_guard(self, current_temp):
-        """Law 3: Smart Braking (15ms pulses)"""
+        """القانون 3: نظام الكبح الذكي (Smart Braking)"""
         if current_temp > self.safe_thermal_limit:
-            time.sleep(0.015) 
-            return "🛡️ SIDB Shield: Thermal Dissipation Active (Law 3)."
+            time.sleep(0.015) # نبضات 15 ملي ثانية
+            return "🛡️ SIDB Shield: Active (Law 3)."
         return "✅ Hardware Stable."
 
 if __name__ == "__main__":
     kernel = ElixirSovereignKernel()
-    print(f"--- Elixir Kernel V19.5 Online | Lead: {kernel.innovator_id} ---")
+    print(f"--- Elixir Kernel V20.0 | {kernel.node_origin} | Lead: {kernel.innovator_id} ---")
     
-    # Testing Law 16: Sovereign Attention
-    # Priority: Critical Task (e.g., Sovereign Node Defense)
-    priority_score = kernel.apply_sovereign_attention(0.9, 0.8, is_critical=True)
-    print(f"🚀 Sovereign Priority Score (S_vec): {priority_score}")
+    # اختبار السيادة (S_vec)
+    priority = kernel.apply_sovereign_attention(0.9, 0.8, is_critical=True)
+    print(f"🚀 Sovereign Priority: {priority}")
     
-    # Testing Law 2: Bee-Hive Synergy
+    # اختبار التآزر (S_bee)
     agents = [{'name': 'Logic', 'power': 0.95}, {'name': 'Memory', 'power': 0.88}]
     print(kernel.bee_hive_synergy(agents))
     
